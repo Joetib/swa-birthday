@@ -1,0 +1,188 @@
+body{
+    background: rebeccapurple;
+
+}
+body * {
+    font-size: 1.3em;
+}
+.font-small{
+    font-size: 1em;
+}
+.font-medium {
+    font-size: 1.1em;
+}
+.font-xxlarge{
+    font-size: 5em;
+}
+.page {
+    height: 100vh;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.cursive {
+    font-family: cursive;
+}
+@media only screen and  (min-width: 1000px){
+    .container{
+        max-width: 920px;
+    }
+    .text-biggest{
+        font-size: 2rem;
+    }
+}
+*{
+    font-size: 16px;
+}
+.rotate-30{
+    transform: rotate(5deg);
+    
+}
+.absolute {
+    position: absolute;
+    left: 50%;
+
+    top: 40%;
+    transform:  translate(-50%, -50%);
+    z-index: -1;
+    
+}
+.absolute-full{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.baloons{
+    position: relative;
+    height: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+
+
+.baloons img {
+    
+    display: inline-block;
+    
+  }
+  
+
+  
+.item.absolute-full img {
+    position: absolute;
+    bottom: -100%;
+
+    left: -40%;
+    
+}
+.item.absolute-full img:nth-child(odd){
+    left: 0%;
+}
+
+.item.absolute-full img:nth-child(3n + 1){
+    left: 60%;
+
+}
+.item.absolute-full img:nth-child(4n + 1){
+    left: -30%;
+
+}
+
+@keyframes slidein {
+    from {
+      top: 120%
+    }
+  
+    to {
+      top: -100%;
+    
+    }
+  }
+  .item.absolute-full img{
+      animation: slidein 3s ease-in infinite;
+      
+  }
+@keyframes moveUp {
+    0%{
+        bottom: -100px;
+
+    }
+    100%{
+        top: -100px;
+        bottom: unset;
+    }
+    
+}
+.absolute-center{
+
+    position: absolute;
+    left: 50%;
+
+    top: 40%;
+    transform:  translate(-50%, -50%);
+    z-index: -1;
+}
+.rotate-20{
+    transform: rotate(20%);
+}
+.rotate--20{
+    transform: rotate(70%);
+}
+.img-default {
+    object-fit: cover;
+    object-position: top;
+    height: 100%;
+    width: 100%;
+}
+.overlapping-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    position: relative;
+}
+
+.overlapping-row .left {
+    position: absolute;
+    padding: 1%;
+    padding: 5%;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    right: 40%;
+    background: white;
+    z-index: 2;
+    box-shadow: 0 0 5px silver;
+
+}
+.overlapping-row .right{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,.4);
+
+}
+.overlapping-row .right img{
+    height: 40vh;
+
+    
+}
