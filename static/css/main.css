@@ -45,6 +45,10 @@ body * {
     transform: rotate(5deg);
     
 }
+.rotate--30{
+    transform: rotate(-10deg);
+    
+}
 .absolute {
     position: absolute;
     left: 50%;
@@ -90,7 +94,7 @@ body * {
     position: absolute;
     bottom: -100%;
 
-    left: -40%;
+    left: -20%;
     
 }
 .item.absolute-full img:nth-child(odd){
@@ -98,7 +102,7 @@ body * {
 }
 
 .item.absolute-full img:nth-child(3n + 1){
-    left: 60%;
+    left: 40%;
 
 }
 .item.absolute-full img:nth-child(4n + 1){
