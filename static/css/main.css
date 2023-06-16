@@ -102,7 +102,7 @@ body * {
 }
 
 .item.absolute-full img:nth-child(3n + 1){
-    left: 40%;
+    left: 10%;
 
 }
 .item.absolute-full img:nth-child(4n + 1){
